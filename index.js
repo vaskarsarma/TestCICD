@@ -7,7 +7,8 @@ app.get('/', function(req, res) {
 });
 
 var server = app.listen(4000, function() {
-    console.log('Hi, I using this server with port 4000');
+    console.log("Hello Vaskar,");
+    console.log('Server is started with port 4000');
 });
 
 exports.closeServer = function() {
