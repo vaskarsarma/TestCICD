@@ -7,7 +7,7 @@ app.get('/', function(req, res) {
 });
 
 var server = app.listen(4000, function() {
-    console.log('Magic is happening on port 4000');
+    console.log('Hi, Server is up with port 4000');
 });
 
 exports.closeServer = function() {
