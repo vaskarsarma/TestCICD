@@ -1,0 +1,30 @@
+{
+    "name": "testcicd",
+    "version": "1.0.0",
+    "description": "Application to test CICD using jenkin",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "test": "mocha"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/vaskarsarma/TestCICD.git"
+    },
+    "keywords": [],
+    "author": "Vaskar Sarma",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/vaskarsarma/TestCICD/issues"
+    },
+    "homepage": "https://github.com/vaskarsarma/TestCICD#readme",
+    "dependencies": {
+        "express": "^4.15.5",
+        "request": "^2.82.0"
+    },
+    "devDependencies": {
+        "mocha": "^3.5.3",
+        "should": "^13.1.0",
+        "supertest": "^3.0.0"
+    }
+}
