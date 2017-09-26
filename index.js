@@ -3,12 +3,12 @@ var app = express();
 var exports = module.exports = {};
 
 app.get('/', function(req, res) {
-    res.send('Hello World');
+    res.send('Hello World Vaskar');
 });
 
 var server = app.listen(4000, function() {
     console.log("Hello Vaskar,");
-    console.log('Server is started with port 4000');
+    console.log('Server is up and running with port 4000');
 });
 
 exports.closeServer = function() {
