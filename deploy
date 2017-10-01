@@ -1,0 +1,10 @@
+-#!/bin/sh      
+ssh ec2-user@ip-172-31-25-19 <<EOF        
+ cd /your-project-path  
+ git pull       
+ npm install 
+ pm2 npm start
+ exit       
+EOF
+
+chmod +x deploy
