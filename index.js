@@ -3,7 +3,7 @@ var app = express();
 var exports = module.exports = {};
 
 app.get('/', function(req, res) {
-    res.send('Hello World Vaskar, I am testing CI & CD using Jenkins');
+    res.send('Hello World Vaskar');
 });
 
 var server = app.listen(4000, function() {
