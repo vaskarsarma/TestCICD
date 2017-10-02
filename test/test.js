@@ -17,7 +17,7 @@ describe("Hello World Server", function() {
             request.get(base_url, function(error, response, body) {
                 //expect(body).toBe("Hello World");
                 assert.equal("Hello World 1", body);
-                helloWorld.closeServer();
+                //helloWorld.closeServer();
                 done();
             });
         });
