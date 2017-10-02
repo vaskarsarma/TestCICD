@@ -1,6 +1,8 @@
 #!/bin/sh
 ssh ec2-user@ip-172-31-25-19  <<EOF
- cd www/testcicdapp
+ cd www/testcicdapp/TestCICD
+ pm2 stop app.json
+ cd ..
  rm -rf temp 
  mkdir temp
  cd temp
