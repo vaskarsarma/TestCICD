@@ -1,0 +1,15 @@
+{
+    "apps": [{
+        "name": "testcicd",
+        "script": "./index.js",
+        "instances": 1,
+        "exec_mode": "fork",
+        "watch": "true",
+        "ignore_watch": ["logs", "node_modules"],
+        "autorestart": true,
+        "env": {
+            "NODE_ENV": "production",
+            "PORT": "4000"
+        }
+    }]
+}
