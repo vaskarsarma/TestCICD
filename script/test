@@ -1,12 +1,9 @@
 #!/bin/sh
 ssh ec2-user@ip-172-31-25-19  <<EOF
- cd www/testcicdapp
- rm -rf temp 
- mkdir temp
- cd temp
- git pull
+ cd www/testcicdapp/temp
  cd TestCICD
+ git pull
  npm install
- ./node_modules/.bin/mocha ./test/test.js
+ ./node_modules/.bin/_mocha ./test/test.js
  exit       
 EOF
