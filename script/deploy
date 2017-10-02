@@ -3,8 +3,10 @@ ssh ec2-user@ip-172-31-25-19  <<EOF
  cd www/testcicdapp
  rm -rf tempbackup
  mkdir tempbackup
- cp -avr /TestCICD/ /tempbackup/
-
- 
+ rsync -av --progress TestCICD tempbackup
+ rsync -av --progress temp/TestCICD/ TestCICD/
+ cd TestCICD
+ npm install
+ pm2 reload app.json
  exit       
 EOF
