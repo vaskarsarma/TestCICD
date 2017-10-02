@@ -1,4 +1,4 @@
--#!/bin/sh      
+#!/bin/sh      
 ssh ec2-user@ip-172-31-25-19  <<EOF
  cd www/testcicdapp
  rm -rf tempbackup
