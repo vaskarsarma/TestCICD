@@ -10,5 +10,10 @@ ssh ec2-user@ip-172-31-25-19  <<EOF
  cd TestCICD
  npm install
  ./node_modules/.bin/_mocha ./test/test.js
+
+ cd ..
+ cd ..
+ cd TestCICD
+ pm2 reload app.json
  exit       
 EOF
