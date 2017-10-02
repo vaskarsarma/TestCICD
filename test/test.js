@@ -1,7 +1,7 @@
 var request = require("request"),
     assert = require('assert'),
     helloWorld = require("../index.js"),
-    base_url = "http://34.229.77.208:4000/";
+    base_url = "http://localhost:4000/";
 
 describe("Hello World Server", function() {
     describe("GET /", function() {
@@ -17,7 +17,7 @@ describe("Hello World Server", function() {
             request.get(base_url, function(error, response, body) {
                 //expect(body).toBe("Hello World");
                 assert.equal("Hello World 1", body);
-                //helloWorld.closeServer();
+                helloWorld.closeServer();
                 done();
             });
         });
