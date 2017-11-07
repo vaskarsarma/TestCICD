@@ -1,0 +1,14 @@
+#!/bin/sh
+ssh ec2-user@ip-172-31-25-19  <<EOF
+ cd www/testcicdapp/TestCICD
+ pm2 stop app.json
+ cd ..
+ rm -rf temp 
+ mkdir temp
+ cd temp
+ git clone https://github.com/vaskarsarma/TestCICD.git
+ cd TestCICD
+ npm install
+ ./node_modules/.bin/_mocha ./test/test.js
+ exit       
+EOF

@@ -1,8 +1,0 @@
--#!/bin/sh      
-ssh ec2-user@ip-172-31-25-19  <<EOF   
- cd www/testcicdapp/TestCICD  
- git pull       
- npm install 
- pm2 reload app.json
- exit       
-EOF
